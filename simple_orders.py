@@ -209,6 +209,7 @@ Released under MIT License
         orders_win.columnconfigure(1, weight=1)
         product_entry.focus_set()
         product_entry.bind("<Return>", insert)
+        quantity_entry.bind("<Return>", insert)
 
     def set_status(self, string: str):
         self.status_bar.configure(text=string)
